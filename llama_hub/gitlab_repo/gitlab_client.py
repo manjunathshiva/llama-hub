@@ -197,7 +197,7 @@ class BaseGitLabClient(Protocol):
         ...
 
 
-class GitLabClient:
+class GitlabClient:
     """
     An asynchronous client for interacting with the GitLab API.
 
@@ -208,7 +208,7 @@ class GitLabClient:
     If no GitLab token is provided, the client will raise a ValueError.
 
     Examples:
-        >>> client = GitLabClient("my_gitlab_token")
+        >>> client = GitlabClient("my_gitlab_token")
         >>> branch_info = client.get_branch("owner", "repo", "branch")
     """
 
@@ -223,7 +223,7 @@ class GitLabClient:
         verbose: bool = False,
     ) -> None:
         """
-        Initialize the GitLabClient.
+        Initialize the GitlabClient.
 
         Args:
             - gitlab_token (str): GitLab token for authentication.
@@ -434,8 +434,8 @@ if __name__ == "__main__":
     import asyncio
 
     async def main() -> None:
-        """Test the GitLabClient."""
-        client = GitLabClient()
+        """Test the GitlabClient."""
+        client = GitlabClient()
         response = await client.get_tree(
             owner="ahmetkca", repo="CommitAI", tree_sha="with-body"
         )
