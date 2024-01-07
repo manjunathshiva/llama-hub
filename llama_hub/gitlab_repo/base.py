@@ -20,10 +20,10 @@ from llama_index.readers.file.base import DEFAULT_FILE_READER_CLS
 from llama_index.readers.schema.base import Document
 
 from llama_hub.gitlab_repo.gitlab_client import (
-    BaseGitLabClient,
+    BaseGitlabClient,
     GitBranchResponseModel,
     GitCommitResponseModel,
-    GitLabClient,
+    GitlabClient,
     GitTreeResponseModel,
 )
 from llama_hub.gitlab_repo.utils import (
@@ -66,7 +66,7 @@ class GitlabRepositoryReader(BaseReader):
 
     def __init__(
         self,
-        gitlab_client: BaseGitLabClient,
+        gitlab_client: BaseGitlabClient,
         owner: str,
         repo: str,
         use_parser: bool = False,
@@ -79,7 +79,7 @@ class GitlabRepositoryReader(BaseReader):
         Initialize params.
 
         Args:
-            - gitlab_client (BaseGitLabClient): GitLab client.
+            - gitlab_client (BaseGitlabClient): GitLab client.
             - owner (str): Owner of the repository.
             - repo (str): Name of the repository.
             - use_parser (bool): Whether to use the parser to extract
@@ -537,7 +537,7 @@ if __name__ == "__main__":
 
         return wrapper
 
-    gitlab_client = GitLabClient(gitlab_token=os.environ["GITLAB_TOKEN"], verbose=True)
+    gitlab_client = GitlabClient(gitlab_token=os.environ["GITLAB_TOKEN"], verbose=True)
 
     reader1 = GitlabRepositoryReader(
         gitlab_client=gitlab_client,

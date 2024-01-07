@@ -3,7 +3,7 @@ from llama_hub.gitlab_repo.base import (
     GitlabRepositoryReader,
 )
 from llama_hub.gitlab_repo.gitlab_client import (
-    BaseGitLabClient,
+    BaseGitlabClient,
     GitBlobResponseModel,
     GitBranchResponseModel,
     GitCommitResponseModel,
@@ -18,15 +18,15 @@ from llama_hub.gitlab_repo.utils import (
 )
 
 __all__ = [
-    "BaseGitLabClient",
+    "BaseGitlabClient",
     "BufferedAsyncIterator",
     "BufferedGitBlobDataIterator",
     "GitBlobResponseModel",
     "GitBranchResponseModel",
     "GitCommitResponseModel",
     "GitTreeResponseModel",
-    "GitLabClient",
-    "GitLabRepositoryReader",
+    "GitlabClient",
+    "GitlabRepositoryReader",
     "get_file_extension",
     "print_if_verbose",
 ]

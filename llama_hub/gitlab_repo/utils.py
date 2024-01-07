@@ -13,13 +13,13 @@ from typing import List, Tuple
 if "pytest" in sys.modules:
     from llama_hub.gitlab_repo.gitlab_client import (
         GitBlobResponseModel,
-        GitLabClient,
+        GitlabClient,
         GitTreeResponseModel,
     )
 else:
     from llama_hub.gitlab_repo.gitlab_client import (
         GitBlobResponseModel,
-        GitLabClient,
+        GitlabClient,
         GitTreeResponseModel,
     )
 
@@ -106,7 +106,7 @@ class BufferedGitBlobDataIterator(BufferedAsyncIterator):
     def __init__(
         self,
         blobs_and_paths: List[Tuple[GitTreeResponseModel.GitTreeObject, str]],
-        gitlab_client: GitLabClient,
+        gitlab_client: GitlabClient,
         owner: str,
         repo: str,
         loop: asyncio.AbstractEventLoop,
@@ -119,7 +119,7 @@ class BufferedGitBlobDataIterator(BufferedAsyncIterator):
         Args:
             - blobs_and_paths (List[Tuple[GitTreeResponseModel.GitTreeObject, str]]):
                 List of tuples containing the blob and the path of the file.
-            - gitlab_client (GitLabClient): GitLab client.
+            - gitlab_client (GitlabClient): GitLab client.
             - owner (str): Owner of the repository.
             - repo (str): Name of the repository.
             - loop (asyncio.AbstractEventLoop): Event loop.

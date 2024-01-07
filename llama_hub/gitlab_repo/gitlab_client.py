@@ -150,7 +150,7 @@ class GitBranchResponseModel(DataClassJsonMixin):
     _links: Links
 
 
-class BaseGitLabClient(Protocol):
+class BaseGitlabClient(Protocol):
     def get_all_endpoints(self) -> Dict[str, str]:
         ...
 
