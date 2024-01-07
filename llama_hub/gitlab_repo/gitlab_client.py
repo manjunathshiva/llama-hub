@@ -155,7 +155,7 @@ class BaseGitlabClient(Protocol):
         ...
 
     async def request(
-        self,git 
+        self,
         endpoint: str,
         method: str,
         headers: Dict[str, Any] = {},
