@@ -8,7 +8,7 @@ from llama_hub.gitlab_repo.gitlab_client import (
     GitBranchResponseModel,
     GitCommitResponseModel,
     GitTreeResponseModel,
-    GitLabClient,
+    GitlabClient,
 )
 from llama_hub.gitlab_repo.utils import (
     BufferedAsyncIterator,
