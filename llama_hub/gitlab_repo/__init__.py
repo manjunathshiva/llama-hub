@@ -1,6 +1,6 @@
 """Init file."""
 from llama_hub.gitlab_repo.base import (
-    GitLabRepositoryReader,
+    GitlabRepositoryReader,
 )
 from llama_hub.gitlab_repo.gitlab_client import (
     BaseGitLabClient,
