@@ -560,7 +560,7 @@ if __name__ == "__main__":
                 "json",
                 ".ipynb",
             ],
-            GitLabRepositoryReader.FilterType.EXCLUDE,
+            GitlabRepositoryReader.FilterType.EXCLUDE,
         ),
     )
 
