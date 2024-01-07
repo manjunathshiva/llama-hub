@@ -462,6 +462,23 @@
       "__init__.py"
     ]
   },
+  "GitlabRepositoryReader": {
+    "id": "gitlab_repo",
+    "author": "manjunathshiva",
+    "keywords": [
+      "gitlab",
+      "repository",
+      "git",
+      "code",
+      "source code",
+      "placeholder"
+    ],
+    "extra_files": [
+      "gitlab_client.py",
+      "utils.py",
+      "__init__.py"
+    ]
+  },
   "RDFReader": {
     "id": "file/rdf",
     "author": "mommi84",
@@ -875,6 +892,19 @@
       "__init__.py"
     ]
   },
+  "GitLabRepositoryIssuesReader": {
+    "id": "gitlab_repo_issues",
+    "author": "manjunathshiva",
+    "keywords": [
+      "gitlab",
+      "repository",
+      "issues"
+    ],
+    "extra_files": [
+      "gitlab_client.py",
+      "__init__.py"
+    ]
+  },
   "FirebaseRealtimeDatabaseReader": {
     "id": "firebase_realtimedb",
     "author": "ajay",
@@ -1025,6 +1055,15 @@
     "author": "rwood-97",
     "keywords": [
       "github",
+      "repository",
+      "collaborators"
+    ]
+  },
+  "GitLabRepositoryCollaboratorsReader": {
+    "id": "gitlab_repo_collaborators",
+    "author": "manjunathshiva",
+    "keywords": [
+      "gitlab",
       "repository",
       "collaborators"
     ]

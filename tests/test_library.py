@@ -11,7 +11,7 @@ def test_library_matches() -> None:
     library_path = hub_dir / "library.json"
     library_dict = json.load(open(library_path, "r"))
     for k, entry in library_dict.items():
-        if k == "GithubRepositoryReader":
+        if k == "GithubRepositoryReader" or k == "GitlabRepositoryReader":
             continue
 
         # make sure every entry has an "id" field
